@@ -1,0 +1,9 @@
+.search-form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.search-form input {
+    height: 44px;
+    border-radius: 0;
+}
