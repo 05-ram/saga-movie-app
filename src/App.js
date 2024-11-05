@@ -1,7 +1,11 @@
+import { RouterProvider } from "react-router-dom";
+import RouterData from "./Routes";
+
 function App() {
+  const route = RouterData();
   return (
     <div className="App">
-      Born To Achieve Great Things!
+      <RouterProvider router={route} />
     </div>
   );
 }
