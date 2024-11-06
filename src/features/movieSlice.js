@@ -13,9 +13,15 @@ const MovieSlice = createSlice(
             },
             setMovies: (state, action) => {
                 state.movieList = action.payload;
+            },
+            getSelectedmovie(id) {
+                return id;
+            },
+            setSelectedMovie: (state, action) => {
+                state.movie = action.payload;
             }
         }
     }
 )
-export const { getMovies, setMovies } = MovieSlice.actions;
+export const { getMovies, setMovies, getSelectedmovie, setSelectedMovie } = MovieSlice.actions;
 export default MovieSlice.reducer;
